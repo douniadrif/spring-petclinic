@@ -1,0 +1,10 @@
+pipline{
+
+agent any 
+tools {
+      maven 'apach maven 3.6.3.bin'
+      jdk 'jdk-11.0.09'
+      }
+      stages {
+        stage }
+          }
