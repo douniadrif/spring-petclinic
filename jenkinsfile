@@ -1,10 +1,16 @@
-pipline{
-
-agent any 
-tools {
-      maven 'apach maven 3.6.3.bin'
-      jdk 'jdk-11.0.09'
+pipeline{
+agent any
+tools{
+        maven 'apache-maven-3.6.3-bin'
+        jdk 'jdk-11.0.9'
+}
+stages{
+      stage('Compilation du projet')
+      {
+        steps{
+           bat 'mvn compile'
+              }
       }
-      stages {
-        stage }
-          }
+}
+
+}
